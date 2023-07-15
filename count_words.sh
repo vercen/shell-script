@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 # 统计行数和单词数
-line_count=$(wc -l < "$1")
+line_count=$(grep -c '' "$1")
 word_count=$(wc -w < "$1")
 
 # 输出统计结果
